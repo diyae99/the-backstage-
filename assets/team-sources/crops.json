@@ -1,0 +1,77 @@
+[
+  {
+    "name": "reda-el-azami",
+    "source": "assets/team-sources/reda-el-azami.jpeg",
+    "output": "public/team/reda-el-azami.jpg",
+    "crop": {
+      "x": 560,
+      "y": 950,
+      "width": 1880,
+      "height": 2350
+    },
+    "outputSize": [
+      800,
+      1000
+    ]
+  },
+  {
+    "name": "abderrahim-amor",
+    "source": "assets/team-sources/abderrahim-amor.jpeg",
+    "output": "public/team/abderrahim-amor.jpg",
+    "crop": {
+      "x": 680,
+      "y": 400,
+      "width": 2000,
+      "height": 2500
+    },
+    "outputSize": [
+      800,
+      1000
+    ]
+  },
+  {
+    "name": "ahmed-belkadi",
+    "source": "assets/team-sources/ahmed-belkadi.jpeg",
+    "output": "public/team/ahmed-belkadi.jpg",
+    "crop": {
+      "x": 750,
+      "y": 430,
+      "width": 2000,
+      "height": 2500
+    },
+    "outputSize": [
+      800,
+      1000
+    ]
+  },
+  {
+    "name": "aya-jebili",
+    "source": "assets/team-sources/aya-jebili.jpeg",
+    "output": "public/team/aya-jebili.jpg",
+    "crop": {
+      "x": 900,
+      "y": 650,
+      "width": 2000,
+      "height": 2500
+    },
+    "outputSize": [
+      800,
+      1000
+    ]
+  },
+  {
+    "name": "diyae-fanoui",
+    "source": "assets/team-sources/diyae-fanoui.jpeg",
+    "output": "public/team/diyae-fanoui.jpg",
+    "crop": {
+      "x": 820,
+      "y": 820,
+      "width": 2000,
+      "height": 2500
+    },
+    "outputSize": [
+      800,
+      1000
+    ]
+  }
+]
