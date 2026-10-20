@@ -1,0 +1,65 @@
+[
+  {
+    "upload": "WhatsApp Image 2026-10-05 at 16.02.50 (1).jpeg",
+    "source": "assets/gallery-sources/cherophobia/01-performers-facing-each-other.jpeg",
+    "output": "public/galleries/cherophobia/01-performers-facing-each-other.jpg",
+    "width": 960,
+    "height": 1280
+  },
+  {
+    "upload": "WhatsApp Image 2026-10-05 at 16.02.14.jpeg",
+    "source": "assets/gallery-sources/cherophobia/02-performer-with-travel-bag.jpeg",
+    "output": "public/galleries/cherophobia/02-performer-with-travel-bag.jpg",
+    "width": 960,
+    "height": 1280
+  },
+  {
+    "upload": "WhatsApp Image 2026-10-05 at 16.02.59 (1).jpeg",
+    "source": "assets/gallery-sources/cherophobia/03-raised-hands.jpeg",
+    "output": "public/galleries/cherophobia/03-raised-hands.jpg",
+    "width": 1500,
+    "height": 2000
+  },
+  {
+    "upload": "WhatsApp Image 2026-10-05 at 16.02.59.jpeg",
+    "source": "assets/gallery-sources/cherophobia/04-reading-beside-chair.jpeg",
+    "output": "public/galleries/cherophobia/04-reading-beside-chair.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  {
+    "upload": "WhatsApp Image 2026-10-05 at 16.02.58 (1).jpeg",
+    "source": "assets/gallery-sources/cherophobia/05-red-fabric-scene.jpeg",
+    "output": "public/galleries/cherophobia/05-red-fabric-scene.jpg",
+    "width": 2000,
+    "height": 1500
+  },
+  {
+    "upload": "WhatsApp Image 2026-10-05 at 16.02.50.jpeg",
+    "source": "assets/gallery-sources/cherophobia/06-cast-on-stage.jpeg",
+    "output": "public/galleries/cherophobia/06-cast-on-stage.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  {
+    "upload": "WhatsApp Image 2026-10-05 at 16.02.12 (1).jpeg",
+    "source": "assets/gallery-sources/cherophobia/07-red-lit-duet.jpeg",
+    "output": "public/galleries/cherophobia/07-red-lit-duet.jpg",
+    "width": 628,
+    "height": 837
+  },
+  {
+    "upload": "WhatsApp Image 2026-10-05 at 16.02.11.jpeg",
+    "source": "assets/gallery-sources/cherophobia/08-ribbon-scene.jpeg",
+    "output": "public/galleries/cherophobia/08-ribbon-scene.jpg",
+    "width": 713,
+    "height": 951
+  },
+  {
+    "upload": "IMG_7914.JPG",
+    "source": "assets/gallery-sources/cherophobia/09-intimate-stage-dialogue.jpg",
+    "output": "public/galleries/cherophobia/09-intimate-stage-dialogue.jpg",
+    "width": 2000,
+    "height": 1333
+  }
+]

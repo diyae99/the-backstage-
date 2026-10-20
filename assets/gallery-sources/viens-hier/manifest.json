@@ -1,0 +1,72 @@
+[
+  {
+    "upload": "WhatsApp Image 2026-10-20 at 20.43.41 (3).jpeg",
+    "source": "assets/gallery-sources/viens-hier/01-performers-holding-hands.jpeg",
+    "output": "public/galleries/viens-hier/01-performers-holding-hands.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  {
+    "upload": "WhatsApp Image 2026-10-20 at 20.43.40 (4).jpeg",
+    "source": "assets/gallery-sources/viens-hier/02-blue-lit-bench-scene.jpeg",
+    "output": "public/galleries/viens-hier/02-blue-lit-bench-scene.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  {
+    "upload": "WhatsApp Image 2026-10-20 at 20.43.40 (3).jpeg",
+    "source": "assets/gallery-sources/viens-hier/03-three-performers.jpeg",
+    "output": "public/galleries/viens-hier/03-three-performers.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  {
+    "upload": "WhatsApp Image 2026-10-20 at 20.43.40 (2).jpeg",
+    "source": "assets/gallery-sources/viens-hier/04-veiled-performer.jpeg",
+    "output": "public/galleries/viens-hier/04-veiled-performer.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  {
+    "upload": "WhatsApp Image 2026-10-20 at 20.43.40 (1).jpeg",
+    "source": "assets/gallery-sources/viens-hier/05-scenic-panels-duet.jpeg",
+    "output": "public/galleries/viens-hier/05-scenic-panels-duet.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  {
+    "upload": "WhatsApp Image 2026-10-20 at 20.43.40.jpeg",
+    "source": "assets/gallery-sources/viens-hier/06-expressive-movement.jpeg",
+    "output": "public/galleries/viens-hier/06-expressive-movement.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  {
+    "upload": "WhatsApp Image 2026-10-20 at 20.43.38.jpeg",
+    "source": "assets/gallery-sources/viens-hier/07-blindfolded-performer.jpeg",
+    "output": "public/galleries/viens-hier/07-blindfolded-performer.jpg",
+    "width": 1600,
+    "height": 900
+  },
+  {
+    "upload": "WhatsApp Image 2026-10-20 at 20.43.41 (2).jpeg",
+    "source": "assets/gallery-sources/viens-hier/08-embrace.jpeg",
+    "output": "public/galleries/viens-hier/08-embrace.jpg",
+    "width": 1333,
+    "height": 2000
+  },
+  {
+    "upload": "WhatsApp Image 2026-10-20 at 20.43.41 (1).jpeg",
+    "source": "assets/gallery-sources/viens-hier/09-seated-duet.jpeg",
+    "output": "public/galleries/viens-hier/09-seated-duet.jpg",
+    "width": 2000,
+    "height": 1333
+  },
+  {
+    "upload": "WhatsApp Image 2026-10-20 at 20.43.41.jpeg",
+    "source": "assets/gallery-sources/viens-hier/10-seated-performer.jpeg",
+    "output": "public/galleries/viens-hier/10-seated-performer.jpg",
+    "width": 1333,
+    "height": 2000
+  }
+]

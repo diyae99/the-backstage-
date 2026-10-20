@@ -73,5 +73,35 @@
       800,
       1000
     ]
+  },
+  {
+    "name": "kacem-khaddi",
+    "source": "assets/team-sources/kacem-khaddi.jpeg",
+    "output": "public/team/kacem-khaddi.jpg",
+    "crop": {
+      "x": 800,
+      "y": 750,
+      "width": 2000,
+      "height": 2500
+    },
+    "outputSize": [
+      800,
+      1000
+    ]
+  },
+  {
+    "name": "aya-abi",
+    "source": "assets/team-sources/aya-abi.jpeg",
+    "output": "public/team/aya-abi.jpg",
+    "crop": {
+      "x": 800,
+      "y": 750,
+      "width": 2000,
+      "height": 2500
+    },
+    "outputSize": [
+      800,
+      1000
+    ]
   }
 ]

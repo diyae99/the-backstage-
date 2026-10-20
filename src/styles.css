@@ -108,8 +108,10 @@ h1 > span { color: transparent; -webkit-text-stroke: 1.3px var(--text); }
 .project-info .eyebrow { color: var(--muted); }
 .project-description { font-size: 13px; color: var(--muted); margin: 16px 0 10px; max-width: 400px; }
 .team { background: var(--surface); border-block: 1px solid var(--line); }
-.team-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 22px; }
+.team-grid { display: grid; grid-template-columns: repeat(8, minmax(0, 1fr)); gap: 35px 22px; }
 .member { min-width: 0; }
+.team-grid > .member { grid-column: span 2; }
+.team-grid > .member:nth-child(5) { grid-column: 2 / span 2; }
 .portrait { aspect-ratio: 4 / 5; position: relative; overflow: hidden; background: var(--surface-raised); margin-bottom: 23px; border-bottom: 3px solid var(--red); }
 .portrait img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .65s; }
 .member:hover img { transform: scale(1.025); }
@@ -163,8 +165,8 @@ dialog::backdrop { background: var(--backdrop); backdrop-filter: blur(5px); }
   .lab-heading { gap: 5%; }
   .principles { gap: 28px; }
   .team-grid { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 35px 22px; }
-  .member { grid-column: span 2; }
-  .member:nth-child(4) { grid-column: 2 / span 2; }
+  .team-grid > .member, .team-grid > .member:nth-child(5) { grid-column: span 2; }
+  .team-grid > .member:last-child { grid-column: 3 / span 2; }
   .contact-grid { width: 53%; }
 }
 @media (max-width: 650px) {
@@ -217,8 +219,8 @@ dialog::backdrop { background: var(--backdrop); backdrop-filter: blur(5px); }
   .project-info h3 { font-size: 24px; }
   .project-description { font-size: 12px; }
   .team-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 18px; }
-  .member, .member:nth-child(4) { grid-column: auto; }
-  .member:last-child { grid-column: 1 / -1; width: calc(50% - 9px); justify-self: center; }
+  .team-grid > .member, .team-grid > .member:nth-child(5) { grid-column: auto; }
+  .team-grid > .member:last-child { grid-column: 1 / -1; width: calc(50% - 9px); justify-self: center; }
   .member h3 { font-size: 24px; }
   .member-role { font-size: 11px; }
   .portrait { margin-bottom: 16px; }
@@ -288,3 +290,59 @@ footer > .contact-details { padding: 22px 0; margin: 0; border-top: 1px solid va
  .association-areas h3 { font-size: 27px; margin-bottom: 10px; }
  .association-areas p { grid-column: 2; }
 }
+
+/* Official production posters: show the entire artwork without visual processing. */
+.experiments { background: var(--bg); }
+.experiments > h2 { font-size: clamp(44px,6vw,80px); margin-bottom: 48px; }
+.experiment-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 8%; align-items: start; }
+.experiment:nth-child(2) { margin-top: 100px; }
+.experiment-poster { display: block; width: 100%; height: auto; object-fit: contain; }
+.experiment h3 { font-family: 'Barlow Condensed',sans-serif; font-size: clamp(26px,3vw,38px); line-height: 1.15; margin: 26px 0 20px; }
+.experiment .text-link { font-size: 12px; }
+.experiment-details > .experiment-poster { max-width: 430px; margin: 0 auto 32px; }
+.experiment-copy { display: grid; gap: 24px; color: var(--muted); line-height: 1.8; }
+.experiment-copy h3 { color: var(--text); font-size: 22px; margin-bottom: 12px; }
+.experiment-copy ul { padding-left: 20px; }
+@media(max-width:650px) {
+ .experiment-grid { grid-template-columns: 1fr; gap: 48px; }
+ .experiment:nth-child(2) { margin-top: 0; }
+ .experiments > h2 { margin-bottom: 32px; }
+ .experiment-details { padding: 24px 20px; }
+}
+
+.experiment-copy > div + div { padding-top: 12px; }
+.experiment-copy p + p { margin-top: 20px; }
+.performance-timeline { list-style: none; padding: 0; margin: 22px 0 0; }
+.performance-timeline li { position: relative; border-left: 1px solid var(--line); padding: 0 0 26px 24px; }
+.performance-timeline li:last-child { padding-bottom: 0; }
+.performance-timeline li::before { content: ''; position: absolute; width: 7px; height: 7px; border-radius: 50%; background: var(--red-light); left: -4px; top: 8px; }
+.performance-timeline time { display: block; color: var(--text); font-weight: 600; margin-bottom: 5px; font-size: 14px; }
+.performance-timeline span { display: block; font-size: 14px; }
+.experiment-award { border-left: 3px solid var(--red); padding: 8px 0 8px 22px; margin-top: 22px; }
+.experiment-award h4 { font-family: 'Barlow Condensed',sans-serif; color: var(--text); font-size: 32px; line-height: 1.15; margin: 0 0 12px; }
+.experiment-award .award-event { color: var(--red-light); }
+
+.experiment-actions { display: flex; flex-wrap: wrap; gap: 18px 28px; }
+.experiment-actions button:disabled { color: var(--subtle); cursor: not-allowed; }
+.gallery-pending { color: var(--subtle); font-size: 12px; margin-top: 14px; }
+.gallery-dialog { width: min(1400px,96vw); max-width: 96vw; height: 94dvh; max-height: 94dvh; padding: 0; overflow: hidden; background: var(--bg); }
+.gallery-heading { display: flex; align-items: start; justify-content: space-between; gap: 24px; padding: 22px 28px; height: 112px; }
+.gallery-heading h2 { font-size: clamp(22px,3vw,34px); line-height: 1.12; max-width: 850px; }
+.gallery-close { flex-shrink: 0; color: var(--text); background: none; border: 0; padding: 8px; cursor: pointer; }
+.gallery-close span { margin-left: 12px; color: var(--red-light); font-size: 22px; }
+.gallery-stage { height: calc(94dvh - 192px); padding: 0 28px; display: grid; place-items: center; touch-action: pan-y pinch-zoom; }
+.gallery-stage img { display: block; width: 100%; height: 100%; object-fit: contain; min-height: 0; animation: gallery-enter .25s ease-out; }
+.gallery-controls { display: flex; align-items: center; justify-content: center; gap: 30px; height: 80px; }
+.gallery-controls p { color: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; min-width: 70px; text-align: center; }
+.gallery-controls button { width: 44px; height: 44px; background: none; color: var(--text); border: 1px solid var(--line); cursor: pointer; font-size: 24px; }
+.gallery-controls button:hover:not(:disabled) { background: var(--red); }
+.gallery-controls button:disabled { opacity: .3; cursor: default; }
+@keyframes gallery-enter { from { opacity: 0; } to { opacity: 1; } }
+@media(max-width:650px) {
+ .gallery-dialog { width: 100vw; max-width: 100vw; height: 100dvh; max-height: 100dvh; }
+ .gallery-heading { padding: 20px 16px; height: 136px; gap: 12px; }
+ .gallery-heading h2 { font-size: 25px; }
+ .gallery-stage { height: calc(100dvh - 216px); padding: 0 10px; }
+}
+
+.contact-details a[href^="tel:"] { font-weight: 400; }
