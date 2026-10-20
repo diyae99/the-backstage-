@@ -40,3 +40,13 @@ Les logos originaux sont conservés sans modification dans `public/logos/troupe/
 ## Maqam 2.0
 
 L’emblème officiel, conservé sans modification dans `public/logos/maqam/official-emblem.jpeg`, est affiché intégralement sur fond noir. Le cadrage et les textes sont dans `projects[1]` de `src/data.ts`. Les blocs de présentation (`paragraph`, `quote`, `signature`) sont rendus en HTML, avec une fiche défilante et un bouton de fermeture fixe en haut.
+
+### Biographies, coordonnées et sections à compléter
+
+Les cinq biographies et les coordonnées générales sont centralisées dans `src/data.ts` (`members[].bio`, `site.contact`). Les boutons « Read bio » ouvrent des fenêtres accessibles, avec fermeture par Échap et retour du focus.
+
+Les composants `ProjectLeads` et `ProjectHighlights` se trouvent dans `src/TeamDetails.tsx`. Leurs listes `projectLeads` et `projectHighlights`, dans `src/data.ts`, restent vides et leurs sections sont donc masquées.
+
+- Pour chaque responsable : renseigner `memberId`, son rôle de projet confirmé (`role`) et son projet ou pôle (`responsibility`). Le portrait et le lien vers sa biographie proviennent de Team.
+- Pour chaque réalisation achevée : renseigner `id`, `title`, une description factuelle, `image` et `imageAlt`. `year` et `url` sont facultatifs ; utiliser uniquement une date connue et une destination existante.
+- Logo de troupe : `public/logos/troupe/official-stacked-v3.jpeg`, source officielle conservée sans modification, affichée entièrement sur fond noir dans la carte et la fiche. Le JPEG fourni ne comporte pas de transparence.

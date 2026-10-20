@@ -242,3 +242,49 @@ dialog::backdrop { background: var(--backdrop); backdrop-filter: blur(5px); }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* Shared contact links and member biographies. */
+.contact-details { display: grid; gap: 12px; margin: 28px 0; font-size: 13px; font-style: normal; line-height: 1.7; }
+.contact-details > a { overflow-wrap: anywhere; width: fit-content; }
+.contact-details > div { display: flex; flex-wrap: wrap; gap: 10px 24px; }
+.contact-details a:hover { color: var(--red-light); }
+footer > .contact-details { padding: 22px 0; margin: 0; border-top: 1px solid var(--line); }
+.bio-button { margin-top: 16px; font-size: 12px; }
+.bio-copy { display: grid; gap: 22px; padding-bottom: 16px; }
+.bio-copy p { margin: 0; line-height: 1.85; color: var(--muted); }
+.responsibility-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,240px),1fr)); gap: 32px; margin-top: 36px; }
+.responsibility-grid img { width: 100%; height: auto; object-fit: cover; }
+.responsibility-grid h3 { font-family: 'Barlow Condensed',sans-serif; font-size: 30px; margin: 20px 0 12px; }
+.responsibility-grid p { color: var(--muted); line-height: 1.7; }
+@media(max-width:650px) { .bio-dialog .dialog-content { padding: 24px 20px; } .contact-details { font-size: 12px; } }
+
+.official-project-logo.theatre { padding: 0; }
+.official-project-logo img { display: block; width: 100%; height: 100%; min-height: 0; object-fit: contain; }
+.official-project-logo.theatre.detail-logo { height: 360px; padding: 0; }
+@media(max-width:650px) { .official-project-logo.theatre.detail-logo { height: 280px; } }
+
+/* Association: editorial introduction, with an open three-column activity list. */
+.association { background: var(--bg); }
+.association-introduction { display: grid; grid-template-columns: 1fr 1.15fr; gap: 8%; align-items: start; }
+.association h2 { font-size: clamp(42px, 5vw, 76px); line-height: .98; max-width: 540px; }
+.association-copy { display: grid; gap: 24px; max-width: 650px; }
+.association-copy p, .association-areas p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.85; }
+.association-activities { margin-top: 64px; }
+.association-areas-intro { font-size: 14px; color: var(--muted); margin: 0 0 32px; }
+.association-areas { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 44px; list-style: none; padding: 0; margin: 0; counter-reset: association-area; }
+.association-areas li { counter-increment: association-area; }
+.association-areas li::before { content: '0' counter(association-area); display: block; font-size: 12px; color: var(--red-light); margin-bottom: 18px; }
+.association-areas h3 { font-family: 'Barlow Condensed',sans-serif; font-size: 30px; line-height: 1.15; font-weight: 600; margin: 0 0 16px; }
+.association-areas p { font-size: 13px; }
+@media(max-width:1000px) { .association-introduction { gap: 5%; } .association-areas { gap: 28px; } }
+@media(max-width:650px) {
+ .association-introduction { grid-template-columns: 1fr; gap: 30px; }
+ .association h2 { font-size: 46px; }
+ .association-copy p { font-size: 13px; }
+ .association-activities { margin-top: 40px; }
+ .association-areas { grid-template-columns: 1fr; gap: 30px; }
+ .association-areas li { display: grid; grid-template-columns: 28px 1fr; column-gap: 14px; }
+ .association-areas li::before { padding-top: 6px; margin: 0; }
+ .association-areas h3 { font-size: 27px; margin-bottom: 10px; }
+ .association-areas p { grid-column: 2; }
+}
